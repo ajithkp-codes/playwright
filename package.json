@@ -1,0 +1,33 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:headed": "playwright test --headed",
+    "test:report": "playwright show-report",
+    "test:currents": "playwright test --reporter=@currents/playwright",
+    "test:currents:ci": "CURRENTS_PROJECT_ID=LBuyQE CURRENTS_RECORD_KEY=$CURRENTS_RECORD_KEY playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajithkp-codes/playwright.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ajithkp-codes/playwright/issues"
+  },
+  "homepage": "https://github.com/ajithkp-codes/playwright#readme",
+  "devDependencies": {
+    "@currents/playwright": "^2.5.0",
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.4.1",
+    "typescript": "^7.0.2"
+  }
+}
